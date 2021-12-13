@@ -11,6 +11,7 @@
 		748757E627670CBE00CF39C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757E527670CBE00CF39C9 /* ContentView.swift */; };
 		748757E827670CC100CF39C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757E727670CC100CF39C9 /* Assets.xcassets */; };
 		748757EB27670CC100CF39C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757EA27670CC100CF39C9 /* Preview Assets.xcassets */; };
+		748757F22767132300CF39C9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757F12767132300CF39C9 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		748757E527670CBE00CF39C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		748757E727670CC100CF39C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748757EA27670CC100CF39C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		748757F12767132300CF39C9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				748757E527670CBE00CF39C9 /* ContentView.swift */,
 				748757E727670CC100CF39C9 /* Assets.xcassets */,
 				748757E927670CC100CF39C9 /* Preview Content */,
+				748757F12767132300CF39C9 /* OnboardingView.swift */,
 			);
 			path = StacyDemo;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748757F22767132300CF39C9 /* OnboardingView.swift in Sources */,
 				748757E627670CBE00CF39C9 /* ContentView.swift in Sources */,
 				748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */,
 			);
