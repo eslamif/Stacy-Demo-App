@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757E327670CBE00CF39C9 /* StacyDemoApp.swift */; };
-		748757E627670CBE00CF39C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757E527670CBE00CF39C9 /* ContentView.swift */; };
 		748757E827670CC100CF39C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757E727670CC100CF39C9 /* Assets.xcassets */; };
 		748757EB27670CC100CF39C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757EA27670CC100CF39C9 /* Preview Assets.xcassets */; };
 		748757F22767132300CF39C9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757F12767132300CF39C9 /* OnboardingView.swift */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		748757E027670CBE00CF39C9 /* StacyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StacyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748757E327670CBE00CF39C9 /* StacyDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacyDemoApp.swift; sourceTree = "<group>"; };
-		748757E527670CBE00CF39C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		748757E727670CC100CF39C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748757EA27670CC100CF39C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		748757F12767132300CF39C9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				748757E327670CBE00CF39C9 /* StacyDemoApp.swift */,
-				748757E527670CBE00CF39C9 /* ContentView.swift */,
 				748757E727670CC100CF39C9 /* Assets.xcassets */,
 				748757E927670CC100CF39C9 /* Preview Content */,
 				748757F12767132300CF39C9 /* OnboardingView.swift */,
@@ -145,7 +142,6 @@
 			files = (
 				748757F22767132300CF39C9 /* OnboardingView.swift in Sources */,
 				74A58D4E27683492002A3555 /* OnboardingItem.swift in Sources */,
-				748757E627670CBE00CF39C9 /* ContentView.swift in Sources */,
 				748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

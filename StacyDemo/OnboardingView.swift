@@ -17,7 +17,7 @@ struct OnboardingView: View {
     var body: some View {
         VStack {
             TabView {
-                ForEach(0 ..< onBoardingData.count) { index in		
+                ForEach(0 ..< onBoardingData.count) { index in
                     let item = onBoardingData[index]
                     OnboardingCard(onboardingItem: item)
                 }
@@ -25,6 +25,24 @@ struct OnboardingView: View {
             //Tab view style
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            
+            //Get started button
+            Button(action: {}) {
+                Text("GET STARTED")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(LinearGradient(gradient: Gradient(colors: [Color("gradient-start"), Color("gradient-end")]), startPoint: .leading, endPoint: .trailing))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .padding(.horizontal, 20)
+            }
+            
+            //Login button
+            Button(action: { print("button clicked") }) {
+                Text("Login")
+                    .padding()
+                    .foregroundColor(Color("text"))
+            }
         }
     }
 }
@@ -40,23 +58,25 @@ fileprivate struct OnboardingCard: View {
     let onboardingItem: OnboardingItem
     
     var body: some View {
-        VStack {
-            Image(onboardingItem.imageName)
-                .resizable()
-                .frame(height: 400)
-                .frame(maxWidth: .infinity)
-            
-            Text(onboardingItem.title)
-                .font(.title)
-                .foregroundColor(Color("title"))
-                .bold()
-                .padding()
-            
-            Text(onboardingItem.description)
-                .font(.body)
-                .foregroundColor(Color("text"))
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 15)
+        GeometryReader { geometry in
+            VStack {
+                Image(onboardingItem.imageName)
+                    .resizable()
+                    .frame(height: geometry.size.height * 0.7)
+                    .frame(maxWidth: .infinity)
+                
+                Text(onboardingItem.title)
+                    .font(.title)
+                    .foregroundColor(Color("title"))
+                    .bold()
+                    .padding()
+                
+                Text(onboardingItem.description)
+                    .font(.body)
+                    .foregroundColor(Color("text"))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 15)
+            }
         }
     }
 }
