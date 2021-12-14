@@ -59,14 +59,11 @@
 		748757E227670CBE00CF39C9 /* StacyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				74A58D51276850DC002A3555 /* ColorExtensions.swift */,
-				748757E327670CBE00CF39C9 /* StacyDemoApp.swift */,
+				74A58D552768604D002A3555 /* Application */,
+				74A58D562768607E002A3555 /* Common */,
+				74A58D592768610E002A3555 /* Modules */,
 				748757E727670CC100CF39C9 /* Assets.xcassets */,
 				748757E927670CC100CF39C9 /* Preview Content */,
-				748757F12767132300CF39C9 /* OnboardingView.swift */,
-				74A58D4D27683492002A3555 /* OnboardingItem.swift */,
-				74A58D4F27684FA4002A3555 /* Launch Screen.storyboard */,
-				74A58D53276858A9002A3555 /* LoginView.swift */,
 			);
 			path = StacyDemo;
 			sourceTree = "<group>";
@@ -77,6 +74,65 @@
 				748757EA27670CC100CF39C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74A58D552768604D002A3555 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				74A58D4F27684FA4002A3555 /* Launch Screen.storyboard */,
+				748757E327670CBE00CF39C9 /* StacyDemoApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		74A58D562768607E002A3555 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				74A58D572768608C002A3555 /* Extensions */,
+				74A58D5827686099002A3555 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		74A58D572768608C002A3555 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74A58D51276850DC002A3555 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74A58D5827686099002A3555 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74A58D4D27683492002A3555 /* OnboardingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74A58D592768610E002A3555 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				74A58D5A27686129002A3555 /* Login */,
+				74A58D5B27686133002A3555 /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		74A58D5A27686129002A3555 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				74A58D53276858A9002A3555 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		74A58D5B27686133002A3555 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				748757F12767132300CF39C9 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
