@@ -13,16 +13,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack{
-            HStack {
-                //Title
-                Text("Hi, \nWelcome Back!")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundColor(.title)
-                    .padding(.bottom, 30)
-                    .padding(.leading, 20)
-                Spacer()
-            }
+            ScreenTitle("Hi,\nWelcome Back!")
             
             VStack {
                 //Email input
@@ -44,6 +35,12 @@ struct LoginView: View {
                     .overlay(RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.text.opacity(0.7), lineWidth: 1))
                     .padding(.horizontal, 20)
+                
+                //Login button
+                Button(action: {}) {
+                    Text("LOGIN")
+                        .textStyle(GradientButtonStyle())
+                }
             }
         }
     }

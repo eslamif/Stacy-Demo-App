@@ -29,12 +29,7 @@ struct OnboardingView: View {
             //Get started button
             Button(action: {}) {
                 Text("GET STARTED")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(LinearGradient(gradient: Gradient(colors: [.gradientStart, .gradientEnd]), startPoint: .leading, endPoint: .trailing))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 20)
+                    .textStyle(GradientButtonStyle())
             }
             
             //Login button
