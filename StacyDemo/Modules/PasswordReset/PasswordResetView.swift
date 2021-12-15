@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct PasswordResetView: View {
+    @State private var email: String = ""
+    
     var body: some View {
-        Text("Reset Password")
+        VStack {
+            ScreenTitleSV("Forgot Password?")
+            
+            HStack {
+                Text("Enter your email in order to reset your password.")
+                    .foregroundColor(.text)
+                    .padding(.horizontal, 20)
+                
+                Spacer()
+            }
+            
+            EmailTextFieldSV(email: $email)
+                .padding(20)
+            
+            Button(action: {}) {
+                Text("Reset Password")
+                    .textStyle(GradientButtonStyle())
+            }
+            Spacer()
+        }
     }
 }
 
