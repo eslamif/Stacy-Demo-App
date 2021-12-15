@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7405749A2769C36B006A60A5 /* TextFieldsSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740574992769C36B006A60A5 /* TextFieldsSV.swift */; };
+		7405749C2769CBCC006A60A5 /* EmailTextFieldSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405749B2769CBCC006A60A5 /* EmailTextFieldSV.swift */; };
+		7405749E2769CC70006A60A5 /* PasswordTextFieldSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405749D2769CC70006A60A5 /* PasswordTextFieldSV.swift */; };
 		748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757E327670CBE00CF39C9 /* StacyDemoApp.swift */; };
 		748757E827670CC100CF39C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757E727670CC100CF39C9 /* Assets.xcassets */; };
 		748757EB27670CC100CF39C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757EA27670CC100CF39C9 /* Preview Assets.xcassets */; };
@@ -17,12 +18,13 @@
 		74A58D52276850DC002A3555 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A58D51276850DC002A3555 /* ColorExtensions.swift */; };
 		74A58D54276858A9002A3555 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A58D53276858A9002A3555 /* LoginView.swift */; };
 		74A58D5E2768727C002A3555 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A58D5D2768727C002A3555 /* GradientButtonStyle.swift */; };
-		74CAD1BD27687FF400D0DD20 /* TitlesSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD1BC27687FF300D0DD20 /* TitlesSV.swift */; };
+		74CAD1BD27687FF400D0DD20 /* ScreenTitleSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD1BC27687FF300D0DD20 /* ScreenTitleSV.swift */; };
 		74CAD1BF2768809E00D0DD20 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CAD1BE2768809E00D0DD20 /* TextExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		740574992769C36B006A60A5 /* TextFieldsSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsSV.swift; sourceTree = "<group>"; };
+		7405749B2769CBCC006A60A5 /* EmailTextFieldSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextFieldSV.swift; sourceTree = "<group>"; };
+		7405749D2769CC70006A60A5 /* PasswordTextFieldSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldSV.swift; sourceTree = "<group>"; };
 		748757E027670CBE00CF39C9 /* StacyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StacyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748757E327670CBE00CF39C9 /* StacyDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacyDemoApp.swift; sourceTree = "<group>"; };
 		748757E727670CC100CF39C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		74A58D51276850DC002A3555 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		74A58D53276858A9002A3555 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74A58D5D2768727C002A3555 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
-		74CAD1BC27687FF300D0DD20 /* TitlesSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesSV.swift; sourceTree = "<group>"; };
+		74CAD1BC27687FF300D0DD20 /* ScreenTitleSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTitleSV.swift; sourceTree = "<group>"; };
 		74CAD1BE2768809E00D0DD20 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,8 +159,9 @@
 		74CAD1BB27687FC300D0DD20 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				74CAD1BC27687FF300D0DD20 /* TitlesSV.swift */,
-				740574992769C36B006A60A5 /* TextFieldsSV.swift */,
+				74CAD1BC27687FF300D0DD20 /* ScreenTitleSV.swift */,
+				7405749B2769CBCC006A60A5 /* EmailTextFieldSV.swift */,
+				7405749D2769CC70006A60A5 /* PasswordTextFieldSV.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -235,12 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				748757F22767132300CF39C9 /* OnboardingView.swift in Sources */,
+				7405749E2769CC70006A60A5 /* PasswordTextFieldSV.swift in Sources */,
 				74A58D4E27683492002A3555 /* OnboardingItem.swift in Sources */,
-				7405749A2769C36B006A60A5 /* TextFieldsSV.swift in Sources */,
 				748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */,
 				74A58D5E2768727C002A3555 /* GradientButtonStyle.swift in Sources */,
+				7405749C2769CBCC006A60A5 /* EmailTextFieldSV.swift in Sources */,
 				74CAD1BF2768809E00D0DD20 /* TextExtensions.swift in Sources */,
-				74CAD1BD27687FF400D0DD20 /* TitlesSV.swift in Sources */,
+				74CAD1BD27687FF400D0DD20 /* ScreenTitleSV.swift in Sources */,
 				74A58D54276858A9002A3555 /* LoginView.swift in Sources */,
 				74A58D52276850DC002A3555 /* ColorExtensions.swift in Sources */,
 			);

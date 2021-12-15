@@ -1,5 +1,5 @@
 //
-//  Titles.swift
+//  ScreenTitleSV.swift
 //  StacyDemo
 //
 //  Created by Frank Eslami on 12/13/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScreenTitle: View {
+struct ScreenTitleSV: View {
     let title: String
     
     init(_ title: String) {
@@ -24,5 +24,11 @@ struct ScreenTitle: View {
                 .padding(.leading, 20)
             Spacer()
         }
+    }
+}
+
+struct ScreenTitleSV_Previews: PreviewProvider {
+    static var previews: some View {
+        ScreenTitleSV("Hello World")
     }
 }

@@ -13,14 +13,14 @@ struct LoginView: View {
     
     var body: some View {
         VStack{
-            ScreenTitle("Hi,\nWelcome Back!")
+            ScreenTitleSV("Hi,\nWelcome Back!")
             
             VStack {
                 //Email input
-                EmailTextField(email: $email)
+                EmailTextFieldSV(email: $email)
                 
                 //Password input
-                PasswordTextField(password: $password)
+                PasswordTextFieldSV(password: $password)
                 
                 //Login button
                 Button(action: {}) {
