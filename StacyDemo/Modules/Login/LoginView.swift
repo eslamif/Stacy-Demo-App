@@ -12,22 +12,48 @@ struct LoginView: View {
     @State var password: String = ""
     
     var body: some View {
-        VStack{
-            ScreenTitleSV("Hi,\nWelcome Back!")
-            
-            VStack(spacing: 15) {
-                //Email input
-                EmailTextFieldSV(email: $email)
-                    .padding(.horizontal, 20)
-
-                //Password input
-                PasswordTextFieldSV(password: $password)
-                    .padding(.horizontal, 20)
-
-                //Login button
-                Button(action: {}) {
-                    Text("LOGIN")
-                        .textStyle(GradientButtonStyle())
+        NavigationView {
+            VStack {
+                ScreenTitleSV("Hi,\nWelcome Back!")
+                
+                VStack(spacing: 15) {
+                    //Email input
+                    EmailTextFieldSV(email: $email)
+                        .padding(.horizontal, 20)
+                    
+                    //Password input
+                    PasswordTextFieldSV(password: $password)
+                        .padding(.horizontal, 20)
+                    
+                    HStack {
+                        Spacer()
+                        
+                        //Forgot password link
+                        NavigationLink("Forgot Password?") {
+                            PasswordResetView()
+                        }
+                        .foregroundColor(Color.text)
+                        .padding(.top, 10)
+                        .padding(.bottom, 10)
+                        .padding(.horizontal, 20)
+                    }
+                    
+                    //Login button
+                    Button(action: {}) {
+                        Text("LOGIN")
+                            .textStyle(GradientButtonStyle())
+                    }
+                    
+                    Spacer()
+                    
+                    //Register
+                    HStack {
+                        Text("Don't have an account?")
+                        NavigationLink("Sign Up") {
+                            RegisterView()
+                        }
+                    }
+                    .padding(.bottom, 20)
                 }
             }
         }

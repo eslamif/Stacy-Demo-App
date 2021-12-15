@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7405749C2769CBCC006A60A5 /* EmailTextFieldSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405749B2769CBCC006A60A5 /* EmailTextFieldSV.swift */; };
 		7405749E2769CC70006A60A5 /* PasswordTextFieldSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405749D2769CC70006A60A5 /* PasswordTextFieldSV.swift */; };
+		740574A12769D28B006A60A5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740574A02769D28B006A60A5 /* RegisterView.swift */; };
+		740574A42769D2EA006A60A5 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740574A32769D2EA006A60A5 /* PasswordResetView.swift */; };
 		748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748757E327670CBE00CF39C9 /* StacyDemoApp.swift */; };
 		748757E827670CC100CF39C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757E727670CC100CF39C9 /* Assets.xcassets */; };
 		748757EB27670CC100CF39C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748757EA27670CC100CF39C9 /* Preview Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		7405749B2769CBCC006A60A5 /* EmailTextFieldSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextFieldSV.swift; sourceTree = "<group>"; };
 		7405749D2769CC70006A60A5 /* PasswordTextFieldSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldSV.swift; sourceTree = "<group>"; };
+		740574A02769D28B006A60A5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		740574A32769D2EA006A60A5 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		748757E027670CBE00CF39C9 /* StacyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StacyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748757E327670CBE00CF39C9 /* StacyDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacyDemoApp.swift; sourceTree = "<group>"; };
 		748757E727670CC100CF39C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7405749F2769D26A006A60A5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				740574A02769D28B006A60A5 /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		740574A22769D2A0006A60A5 /* PasswordReset */ = {
+			isa = PBXGroup;
+			children = (
+				740574A32769D2EA006A60A5 /* PasswordResetView.swift */,
+			);
+			path = PasswordReset;
+			sourceTree = "<group>";
+		};
 		748757D727670CBE00CF39C9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +146,8 @@
 		74A58D592768610E002A3555 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				740574A22769D2A0006A60A5 /* PasswordReset */,
+				7405749F2769D26A006A60A5 /* Register */,
 				74A58D5A27686129002A3555 /* Login */,
 				74A58D5B27686133002A3555 /* Onboarding */,
 			);
@@ -237,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740574A12769D28B006A60A5 /* RegisterView.swift in Sources */,
 				748757F22767132300CF39C9 /* OnboardingView.swift in Sources */,
 				7405749E2769CC70006A60A5 /* PasswordTextFieldSV.swift in Sources */,
+				740574A42769D2EA006A60A5 /* PasswordResetView.swift in Sources */,
 				74A58D4E27683492002A3555 /* OnboardingItem.swift in Sources */,
 				748757E427670CBE00CF39C9 /* StacyDemoApp.swift in Sources */,
 				74A58D5E2768727C002A3555 /* GradientButtonStyle.swift in Sources */,
