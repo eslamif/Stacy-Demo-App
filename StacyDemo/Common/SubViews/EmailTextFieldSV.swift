@@ -29,7 +29,6 @@ struct EmailTextFieldSV: View {
         //Custom border
         .overlay(RoundedRectangle(cornerRadius: 8)
                     .stroke(Color.text.opacity(0.7), lineWidth: 1))
-        .padding(.horizontal, 20)
     }
 }
 

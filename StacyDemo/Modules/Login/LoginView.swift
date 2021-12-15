@@ -18,10 +18,12 @@ struct LoginView: View {
             VStack {
                 //Email input
                 EmailTextFieldSV(email: $email)
-                
+                    .padding(.horizontal, 20)
+
                 //Password input
                 PasswordTextFieldSV(password: $password)
-                
+                    .padding(.horizontal, 20)
+
                 //Login button
                 Button(action: {}) {
                     Text("LOGIN")
