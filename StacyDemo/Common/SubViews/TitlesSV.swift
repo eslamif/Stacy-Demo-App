@@ -16,7 +16,6 @@ struct ScreenTitle: View {
     
     var body: some View {
         HStack {
-            //Title
             Text(title)
                 .font(.largeTitle)
                 .bold()

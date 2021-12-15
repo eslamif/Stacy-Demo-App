@@ -17,24 +17,10 @@ struct LoginView: View {
             
             VStack {
                 //Email input
-                TextField("Email Address", text: $email)
-                    .font(.title3)
-                    .padding(8)
-                
-                //Custom border
-                    .overlay(RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color.text.opacity(0.7), lineWidth: 1))
-                    .padding(.horizontal, 20)
+                EmailTextField(email: $email)
                 
                 //Password input
-                SecureField("Password", text: $password)
-                    .font(.title3)
-                    .padding(8)
-                
-                //Custom border
-                    .overlay(RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color.text.opacity(0.7), lineWidth: 1))
-                    .padding(.horizontal, 20)
+                PasswordTextField(password: $password)
                 
                 //Login button
                 Button(action: {}) {
