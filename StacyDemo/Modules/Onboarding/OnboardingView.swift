@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @State private var showLoginView: Bool = false
+
     var onBoardingData: [OnboardingItem] = [
         OnboardingItem(imageName: "onb_find_place", title: "Find Places to Live", description: "Find great verified places & people to share a home with."),
         OnboardingItem(imageName: "onb_match", title: "Match Your Preferences", description: "Tell us your preferences and match with the right people."),
@@ -33,11 +35,14 @@ struct OnboardingView: View {
             }
             
             //Login button
-            Button(action: { print("button clicked") }) {
+            Button(action: { showLoginView.toggle() }) {
                 Text("Login")
                     .padding()
                     .foregroundColor(Color.text)
             }
+        }
+        .fullScreenCover(isPresented: $showLoginView) {
+            LoginView()
         }
     }
 }
