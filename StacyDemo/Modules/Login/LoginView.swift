@@ -15,7 +15,7 @@ struct LoginView: View {
         VStack{
             ScreenTitleSV("Hi,\nWelcome Back!")
             
-            VStack {
+            VStack(spacing: 15) {
                 //Email input
                 EmailTextFieldSV(email: $email)
                     .padding(.horizontal, 20)
