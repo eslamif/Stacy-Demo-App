@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @State private var showLoginView: Bool = false
+    @State private var shouldAnimateLoginButton: Bool = false
 
     var onBoardingData: [OnboardingItem] = [
         OnboardingItem(imageName: "onb_find_place", title: "Find Places to Live", description: "Find great verified places & people to share a home with."),
@@ -39,10 +40,20 @@ struct OnboardingView: View {
                 Text("Login")
                     .padding()
                     .foregroundColor(Color.text)
+                    .opacity(shouldAnimateLoginButton ? 1 : 0)
             }
         }
         .fullScreenCover(isPresented: $showLoginView) {
             LoginView()
+        }
+        .onAppear {
+            animateLoginButton()
+        }
+    }
+    
+    func animateLoginButton() {
+        withAnimation(.linear(duration: 2)) {
+            shouldAnimateLoginButton = true
         }
     }
 }
