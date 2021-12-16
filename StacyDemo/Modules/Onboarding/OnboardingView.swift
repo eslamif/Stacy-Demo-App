@@ -10,7 +10,8 @@ import SwiftUI
 struct OnboardingView: View {
     @State private var showLoginView: Bool = false
     @State private var shouldAnimateLoginButton: Bool = false
-
+    @State private var shouldAnimateTopView: Bool = false
+    
     var onBoardingData: [OnboardingItem] = [
         OnboardingItem(imageName: "onb_find_place", title: "Find Places to Live", description: "Find great verified places & people to share a home with."),
         OnboardingItem(imageName: "onb_match", title: "Match Your Preferences", description: "Tell us your preferences and match with the right people."),
@@ -28,12 +29,20 @@ struct OnboardingView: View {
             //Tab view style
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            .padding(.top, 25)
+            .padding(.bottom, 20)
+            
+            //For animation
+            .offset(x: shouldAnimateTopView ? 0 : 400)
             
             //Get started button
             Button(action: {}) {
                 Text("GET STARTED")
                     .textStyle(GradientButtonStyle())
             }
+            //For animation
+            .offset(x: shouldAnimateTopView ? 0 : -400)
+            
             
             //Login button
             Button(action: { showLoginView.toggle() }) {
@@ -47,13 +56,22 @@ struct OnboardingView: View {
             LoginView()
         }
         .onAppear {
+            animateTopView()
             animateLoginButton()
         }
     }
     
+    //Animations
     func animateLoginButton() {
         withAnimation(.linear(duration: 2)) {
             shouldAnimateLoginButton = true
+        }
+    }
+    
+    func animateTopView() {
+        //Create bounce animation
+        withAnimation(Animation.interpolatingSpring(stiffness: 40, damping: 8)) {
+            shouldAnimateTopView = true
         }
     }
 }
